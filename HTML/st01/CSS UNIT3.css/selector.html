@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selector</title>
+    </head>
+    <style>
+         /*#box ~ p {
+            color:brown;
+         }
+          #box p {
+            color:bisque;
+         }
+          #box + p {
+            color:cadetblue;
+         }*/
+          #box > p {
+            color:cadetblue;
+         }
+            /* a:hover{
+             color:rgb(0, 34, 255);
+              }*/
+            a:visited{
+                color:aqua;
+            }  
+            ul {
+                list-style: none;
+                display: flex;
+            }
+            ul li{
+                background-color:blanchedalmond;
+                margin: 20px;
+                border-right: 5px solid #e41111;
+                padding: 0px 20px;
+            }
+            ul li:nth-child(5){
+                border-right: 0px;
+            }
+            ul li::first-letter{
+                color:crimson;
+                font-size: 20px;
+            }
+           p::first-line{
+            background-color: aqua;
+           }
+        
+    </style>
+<body>
+    <ul>
+        <li>home</li>
+        <li>about</li>
+        <li>services</li>
+        <li>gallery</li>
+        <li>contact</li>
+    </ul>
+<div id="box">
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas aliquam eaque sapiente fugit minima. Cupiditate ut harum labore, placeat tenetur dolorem repudiandae perspiciatis recusandae, officia aliquid, blanditiis exercitationem assumenda nesciunt?
+        </p>
+         <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas aliquam eaque sapiente fugit minima. Cupiditate ut harum labore, placeat tenetur dolorem repudiandae perspiciatis recusandae, officia aliquid, blanditiis exercitationem assumenda nesciunt?
+        </p>
+         <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas aliquam eaque sapiente fugit minima. Cupiditate ut harum labore, placeat tenetur dolorem repudiandae perspiciatis recusandae, officia aliquid, blanditiis exercitationem assumenda nesciunt?
+        </p>
+         <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas aliquam eaque sapiente fugit minima. Cupiditate ut harum labore, placeat tenetur dolorem repudiandae perspiciatis recusandae, officia aliquid, blanditiis exercitationem assumenda nesciunt?
+        </p>
+
+    </div>
+    <a href="">Visit the link</a>
+</body>
+</html>
